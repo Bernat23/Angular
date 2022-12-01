@@ -1,0 +1,10 @@
+<h3>Errors: {{this.getMemori().errors}}</h3>
+<div>
+    Temps que et queda per veure-les totes:{{this.getMemori().timer}}
+</div>
+<br>
+<div *ngFor="let baralla of this.getMemori().baralles; let vIndex = index" (click) = "comptarGirades()">
+    <app-baralla [baralla]="baralla"></app-baralla>
+</div>
+
+

@@ -1,0 +1,7 @@
+<span *ngIf="carta.visible" (click) ="agafar(carta)">
+    <img src="./assets/imatges/{{carta.img}}" alt="carta">
+</span>
+
+<span *ngIf="!carta.visible" (click) ="agafar(carta)">
+    <img src="./assets/imatges/cartaGirada.png" alt="carta">
+</span>
